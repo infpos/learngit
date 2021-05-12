@@ -11,9 +11,15 @@ Desktop.ini
 dist
 build
 
-#Java
-*.class
-
 # My configurations:
 db.ini
 deploy_key_rsa
+
+# 排除所有.开头的隐藏文件:
+.*
+# 排除所有.class文件:
+*.class
+
+# 不排除.gitignore和App.class:
+!.gitignore
+!App.class
